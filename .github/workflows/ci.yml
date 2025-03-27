@@ -21,7 +21,7 @@ docker-ci:
          sleep 20
 
      - name: Run test inside web container
-       run: docker compose exec -it web curl http://lvm66087.sit.kmutt.ac.th:5000/api/users
+       run: docker compose exec -it web curl http://localhost:5000/api/users
 
      - name: Shutdown Docker Compose
        if: always()
